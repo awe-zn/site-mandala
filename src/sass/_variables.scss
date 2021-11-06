@@ -1,0 +1,59 @@
+// color variables definition
+$main: #09aee0;
+$main-darker: #0284bc;
+$main-darker2: #01628b;
+$main-lighter: #23c8fa;
+$secondary: #fbb911;
+$secondary-darker: #f09308;
+$dark1: #1f2d3d;
+$dark2: #3c4858;
+$light1: #eff2f7;
+$light2: #ffffff;
+
+$theme-colors: (
+  "blue": $main,
+  "blue-darker": $main-darker,
+  "blue-darker-2": $main-darker2,
+  "blue-lighter": $main-lighter,
+  "yellow": $secondary,
+  "yellow-darker": $secondary-darker,
+  "dark-1": $dark1,
+  "dark-2": $dark2,
+  "light-1": $light1,
+  "white": $light2,
+  "transparent": #fff0,
+) !default;
+
+// spacers variable definition
+$spacer: 1rem;
+$awe-spacers: (
+  "awe-8":   $spacer * 0.5,
+  "awe-16":  $spacer * 1,
+  "awe-24":  $spacer * 1.5,
+  "awe-40":  $spacer * 2.5,
+  "awe-56":  $spacer * 3.5,
+  "awe-64":  $spacer * 4,
+);
+
+// font features variables definition
+$font-sizes: (
+  12: 12px,
+  14: 14px,
+  16: 16px,
+  24: 24px,
+  36: 36px,
+);
+
+$font-weight-thin: 100;
+$font-weight-extra-light: 200;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+$font-weight-extra-bold: 800;
+$font-weight-black: 900;
+
+// navbar
+
+$navbar-toggler-focus-width:        0;

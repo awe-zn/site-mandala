@@ -1,0 +1,22 @@
+{
+  "name": "site-mandala",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/sass/style.scss:dist/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/awe-zn/site-mandala.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/awe-zn/site-mandala/issues"
+  },
+  "homepage": "https://github.com/awe-zn/site-mandala#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.2"
+  }
+}
