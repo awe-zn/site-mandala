@@ -8,11 +8,107 @@
 
 //navbar
 
-.navbar-nav .nav-item .nav-link {
-    &:hover {
-        text-decoration: underline;
-    }
-    &:active {
-        text-decoration: none;
-    }
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: $main;
+  }
+  
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: $main;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .hover-underline-animation-2 {
+    display: inline-block;
+    position: relative;
+    color: $yellow;
+  }
+  
+  .hover-underline-animation-2:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: $yellow;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation-3 {
+    display: inline-block;
+    position: relative;
+    color: #72CC04;
+  }
+  
+  .hover-underline-animation-3:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #72CC04;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .hover-underline-animation-4 {
+    display: inline-block;
+    position: relative;
+    color: #7E29CC;
+  }
+  
+  .hover-underline-animation-4:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #7E29CC;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  .hover-underline-animation-2:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  .hover-underline-animation-3:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  .hover-underline-animation-4:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+.about-mandala{
+    h1 { font-family: 'Rubik', sans-serif;}
+    background-image: url(/dist/image/svg/logo.svg), url(/dist/image/svg/circle.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position-x: 25rem, 15rem;
 }
