@@ -3,7 +3,7 @@
 @import "components";
 
 * {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 //navbar
@@ -14,5 +14,126 @@
     }
     &:active {
         text-decoration: none;
+    }
+}
+
+//filtro por ano da seção "projetos criados"
+
+.filtro {
+    .filtro__item {
+        font-weight: 700;
+        font-size: 1rem;
+        height: 40px;
+        width: 55px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid $dark1;
+        cursor: pointer;
+    }
+
+    .filtro__item.is-active {
+        background: $secondary;
+        border: 2px solid $secondary;
+    }
+}
+
+//slides da seção
+.swiper {
+    width: 100%;
+    min-height: 412px;
+    position: relative;
+
+    .swiper-slide {
+        min-height: 362px;
+
+        .slide {
+            width: 100%;
+            max-width: 714px;
+            margin: 0 auto;
+            position: relative;
+
+            .slide__previa {
+                width: 258px;
+                height: 362px;
+                background: $dark1;
+            }
+
+            .slide__titulo {
+                max-width: 456px;
+                max-height: 213px;
+            }
+
+            .slide__nomes {
+                max-width: 379px;
+            }
+        }
+    }
+
+    .swiper-btn-prev, .swiper-btn-next {
+        position: absolute;
+        top: 35%;
+        width: 59px;
+        height: 59px;
+        z-index: 1000;
+        background: url(/dist/image/svg/arrow-slides.svg);
+    }
+
+    .swiper-btn-next {
+        right: 0;
+        transform: rotate(180deg);
+    }
+
+    .swiper-pagination {
+        bottom: 0;
+    }
+
+    .swiper-pagination-bullet {
+        border: 1px solid $dark1;
+        width: 10px;
+        height: 10px;
+        background: $main-darker;
+        opacity: 1;
+
+        &.swiper-pagination-bullet-active {
+            background: $secondary;
+            border: 0;
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    .swiper {
+        padding: 0 0 128px 0;
+        .swiper-slide {
+            .slide {
+                .slide__previa {
+                    width: 100%;
+                }
+                .slide__titulo {
+                    max-width: 100%;
+                }
+                .slide__nomes {
+                    max-width: 100%;
+                }
+                .slide__download {
+                    background: $secondary;
+                }
+            }
+        }
+        .swiper-btn-prev, .swiper-btn-next {
+            top: 88%;
+        }
+        .swiper-btn-next {
+            right: 0;
+            transform: rotate(180deg);
+        }
+        .swiper-pagination {
+            display: block;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+        }
     }
 }

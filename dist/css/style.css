@@ -13816,4 +13816,105 @@ textarea.form-control-lg {
   text-decoration: none;
 }
 
+.filtro .filtro__item {
+  font-weight: 700;
+  font-size: 1rem;
+  height: 40px;
+  width: 55px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #1f2d3d;
+  cursor: pointer;
+}
+.filtro .filtro__item.is-active {
+  background: #fbb911;
+  border: 2px solid #fbb911;
+}
+
+.swiper {
+  width: 100%;
+  min-height: 412px;
+  position: relative;
+}
+.swiper .swiper-slide {
+  min-height: 362px;
+}
+.swiper .swiper-slide .slide {
+  width: 100%;
+  max-width: 714px;
+  margin: 0 auto;
+  position: relative;
+}
+.swiper .swiper-slide .slide .slide__previa {
+  width: 258px;
+  height: 362px;
+  background: #1f2d3d;
+}
+.swiper .swiper-slide .slide .slide__titulo {
+  max-width: 456px;
+  max-height: 213px;
+}
+.swiper .swiper-slide .slide .slide__nomes {
+  max-width: 379px;
+}
+.swiper .swiper-btn-prev, .swiper .swiper-btn-next {
+  position: absolute;
+  top: 35%;
+  width: 59px;
+  height: 59px;
+  z-index: 1000;
+  background: url(/dist/image/svg/arrow-slides.svg);
+}
+.swiper .swiper-btn-next {
+  right: 0;
+  transform: rotate(180deg);
+}
+.swiper .swiper-pagination {
+  bottom: 0;
+}
+.swiper .swiper-pagination-bullet {
+  border: 1px solid #1f2d3d;
+  width: 10px;
+  height: 10px;
+  background: #0284bc;
+  opacity: 1;
+}
+.swiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #fbb911;
+  border: 0;
+}
+
+@media (max-width: 991.98px) {
+  .swiper {
+    padding: 0 0 128px 0;
+  }
+  .swiper .swiper-slide .slide .slide__previa {
+    width: 100%;
+  }
+  .swiper .swiper-slide .slide .slide__titulo {
+    max-width: 100%;
+  }
+  .swiper .swiper-slide .slide .slide__nomes {
+    max-width: 100%;
+  }
+  .swiper .swiper-slide .slide .slide__download {
+    background: #fbb911;
+  }
+  .swiper .swiper-btn-prev, .swiper .swiper-btn-next {
+    top: 88%;
+  }
+  .swiper .swiper-btn-next {
+    right: 0;
+    transform: rotate(180deg);
+  }
+  .swiper .swiper-pagination {
+    display: block;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
