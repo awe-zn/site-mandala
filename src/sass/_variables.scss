@@ -3,6 +3,7 @@ $main: #09aee0;
 $main-darker: #0284bc;
 $main-darker2: #01628b;
 $main-lighter: #23c8fa;
+$main-lighter2: #027EC3;
 $secondary: #fbb911;
 $secondary-darker: #f09308;
 $dark1: #1f2d3d;
@@ -15,6 +16,7 @@ $theme-colors: (
   "blue-darker": $main-darker,
   "blue-darker-2": $main-darker2,
   "blue-lighter": $main-lighter,
+  "blue-lighter2": $main-lighter2,
   "yellow": $secondary,
   "yellow-darker": $secondary-darker,
   "dark-1": $dark1,
@@ -31,10 +33,12 @@ $awe-spacers: (
   "awe-16":  $spacer * 1,
   "awe-24":  $spacer * 1.5,
   "awe-36":  $spacer * 2.25,
+  "awe-32":  $spacer * 2,
   "awe-40":  $spacer * 2.5,
   "awe-48":  $spacer * 3,
   "awe-56":  $spacer * 3.5,
   "awe-64":  $spacer * 4,  
+  "awe-72":  $spacer * 5,
   "awe-88":  $spacer * 5.5,
   "awe-144": $spacer * 9,
   "awe-160": $spacer * 10,
@@ -48,6 +52,7 @@ $font-sizes: (
   16: 16px,
   24: 24px,
   36: 36px,
+  48: 48px,
 );
 
 $font-weight-thin: 100;
